@@ -25,4 +25,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/BookList:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/bookList:latest
