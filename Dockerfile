@@ -1,5 +1,5 @@
 # Use the official Node image as a base image
-FROM node:14-alpine
+FROM node:18-alpine
 
 # Set the working directory inside the container
 WORKDIR /usr/src/app
@@ -21,7 +21,7 @@ RUN npm install -g serve
 # RUN npm install -g pm2
 
 # Expose the port that your app is running on
-EXPOSE 3002
+EXPOSE 3001
 
 # CMD ["pm2-runtime", "serve", "dist", "3000", "--spa"]
-CMD ["serve", "dist", "-l", "3000"]
+CMD ["serve", "dist", "-l", "3001"]
